@@ -1,0 +1,28 @@
+{
+  "nome": "João Silva",
+  "idade": 32,
+  "cidade": "São Paulo - SP",
+  "profissao": "Analista de Sistemas",
+  "hobbies": ["fotografia", "ciclismo", "café especial"],
+  "preferencias": {
+    "comida": "italiana",
+    "filme": "ficção científica",
+    "musica": "rock alternativo",
+    "cafe": "expresso"
+  },
+  "objetivos": [
+    "aprender francês até o fim do ano",
+    "fazer uma trilha na Chapada Diamantina",
+    "ler 12 livros em 2026"
+  ],
+  "rotina": {
+    "acordar": "06:30",
+    "dormir": "23:00",
+    "horario_livre": ["sabado", "domingo"]
+  },
+  "contatos_importantes": [
+    {"nome": "Maria (mãe)", "aniversario": "15/05"},
+    {"nome": "Pedro (irmão)", "aniversario": "22/08"},
+    {"nome": "Ana (namorada)", "aniversario": "10/02"}
+  ]
+}
