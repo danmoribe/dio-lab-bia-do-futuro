@@ -1,0 +1,44 @@
+{
+  "regras_casa": {
+    "condominio": {
+      "salao_festas": "Reservar com 3 dias de antecedência na portaria",
+      "academia": "Funciona 06h-22h, precisa agendar para horários de pico",
+      "visitas": "Cadastrar no interfone até 20h"
+    }
+  },
+  "locais_favoritos": {
+    "cafeterias": [
+      {"nome": "Coffee Lab", "endereco": "Vila Madalena", "pedido": "expresso duplo"},
+      {"nome": "Sofá Café", "endereco": "Pinheiros", "pedido": "cappuccino"}
+    ],
+    "restaurantes": [
+      {"nome": "Terraço Itália", "tipo": "italiano", "ocasiao": "datas especiais"},
+      {"nome": "Casa do Porco", "tipo": "brasileiro", "observacao": "chegar cedo ou reservar"}
+    ],
+    "parques": ["Ibirapuera", "Villa-Lobos", "Aclimação"]
+  },
+  "receitas_favoritas": {
+    "macarrao_parisiense": {
+      "ingredientes": ["macarrão", "creme de leite", "presunto", "ervilha", "queijo"],
+      "modo_preparo": "Cozinhar macarrão, misturar creme de leite com os ingredientes, gratinar no forno"
+    }
+  },
+  "dicas_viagem": {
+    "chapada_diamantina": {
+      "melhor_epoca": "abril a outubro",
+      "roteiro_basico": ["Vale do Pati", "Cachoeira da Fumaça", "Morro do Pai Inácio"],
+      "preparo": "levar bastante água, protetor solar, repelente"
+    }
+  },
+  "filmes_recomendados": [
+    {"titulo": "Interestelar", "onde_assistir": "Netflix", "nota_pessoal": 9.5},
+    {"titulo": "A Chegada", "onde_assistir": "Prime Video", "nota_pessoal": 9.0},
+    {"titulo": "Blade Runner 2049", "onde_assistir": "HBO Max", "nota_pessoal": 8.5}
+  ],
+  "lembretes_recorrentes": {
+    "quarta_feira": "Colocar lixo orgânico para coleta (20h)",
+    "quinta_feira": "Colocar lixo reciclável para coleta (20h)",
+    "dia_15": "Contas: internet e luz vencem dia 20",
+    "dia_25": "Aniversário da Maria (mãe) no dia 15/05, comprar presente"
+  }
+}
