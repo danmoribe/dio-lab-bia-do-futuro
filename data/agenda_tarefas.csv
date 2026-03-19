@@ -1,0 +1,10 @@
+data,hora,descricao,categoria,status,prioridade
+2026-03-20,14:30,Reunião com cliente,Trabalho,Pendente,Alta
+2026-03-21,09:00,Consulta médica,Saúde,Pendente,Alta
+2026-03-21,19:00,Jantar com Ana,Pessoal,Pendente,Média
+2026-03-22,10:30,Comprar presente aniversário Maria,Compras,Pendente,Alta
+2026-03-23,15:00,Entrega relatório projeto X,Trabalho,Pendente,Média
+2026-03-24,08:00,Revisão do carro,Manutenção,Pendente,Baixa
+2026-03-25,20:00,Aula de francês online,Estudos,Pendente,Média
+2026-03-19,18:30,Comprar pão e leite,Compras,Concluído,Baixa
+2026-03-19,11:00,Alongamento 15min,Saúde,Concluído,Média
