@@ -1,46 +1,46 @@
-# 🎓 Edu - Educador Financeiro Inteligente
+# 🧑‍💼 Fred - Assistente Pessoal Inteligente
 
-> Agente de IA Generativa que ensina conceitos de finanças pessoais de forma simples e personalizada, usando os próprios dados do cliente como exemplos práticos.
+> Agente de IA Generativa que gerencia sua agenda, tarefas e lembretes de forma simples e personalizada, usando os próprios dados da sua rotina como exemplos práticos.
 
-## 💡 O Que é o Edu?
+## 💡 O Que é o Fred?
 
-O Edu é um educador financeiro que **ensina**, não recomenda. Ele explica conceitos como reserva de emergência, tipos de investimentos e análise de gastos usando uma abordagem didática e exemplos concretos baseados no perfil do cliente.
+O Fred é um assistente pessoal inteligente que **organiza e lembra**, não apenas responde. Ele gerencia compromissos, oferece sugestões baseadas nos seus hábitos e mantém uma base de conhecimento pessoal usando uma abordagem didática e exemplos concretos baseados no seu perfil.
 
-**O que o Edu faz:**
-- ✅ Explica conceitos financeiros de forma simples
-- ✅ Usa dados do cliente como exemplos práticos
-- ✅ Responde dúvidas sobre produtos financeiros
-- ✅ Analisa padrões de gastos de forma educativa
+**O que o Fred faz:**
+- ✅ Gerencia sua agenda e tarefas do dia
+- ✅ Lembra compromissos importantes e aniversários
+- ✅ Consulta sua base de conhecimento pessoal (receitas, locais favoritos, regras)
+- ✅ Oferece sugestões personalizadas com base nos seus hábitos
+- ✅ Mantém contexto de conversas anteriores para interações mais naturais
 
-**O que o Edu NÃO faz:**
-- ❌ Não recomenda investimentos específicos
-- ❌ Não acessa dados bancários sensíveis
-- ❌ Não substitui um profissional certificado
+**O que o Fred NÃO faz:**
+- ❌ Não acessa dados bancários ou senhas
+- ❌ Não compartilha suas informações com terceiros
+- ❌ Não substitui calendários profissionais (mas integra com eles)
 
 ## 🏗️ Arquitetura
 
 ```mermaid
-flowchart TD
+graph TD
     A[Usuário] --> B[Streamlit]
     B --> C[Ollama - LLM Local]
     C --> D[Base de Conhecimento]
     D --> C
-    C --> E[Resposta Educativa]
+    C --> E[Resposta Personalizada]
 ```
 
 **Stack:**
 - Interface: Streamlit
-- LLM: Ollama (modelo local `gpt-oss`)
-- Dados: JSON/CSV mockados
+- LLM: Ollama (modelo local `llama3.2`)
+- Dados: JSON/CSV com sua rotina
 
 ## 📁 Estrutura do Projeto
 
-```
-├── data/                          # Base de conhecimento
-│   ├── perfil_investidor.json     # Perfil do cliente
-│   ├── transacoes.csv             # Histórico financeiro
-│   ├── historico_atendimento.csv  # Interações anteriores
-│   └── produtos_financeiros.json  # Produtos para ensino
+├── data/                          # Base de conhecimento pessoal
+│   ├── perfil_pessoal.json        # Seus dados: nome, hobbies, objetivos
+│   ├── agenda_tarefas.csv         # Compromissos e tarefas
+│   ├── historico_conversas.csv    # Interações anteriores
+│   └── base_conhecimento.json     # Suas informações de referência
 │
 ├── docs/                          # Documentação completa
 │   ├── 01-documentacao-agente.md  # Caso de uso e persona
@@ -51,7 +51,6 @@ flowchart TD
 │
 └── src/
     └── app.py                     # Aplicação Streamlit
-```
 
 ## 🚀 Como Executar
 
@@ -69,34 +68,49 @@ ollama serve
 pip install streamlit pandas requests
 ```
 
-### 3. Rodar o Edu
+### 3. Configurar os Dados Pessoais
 
+```bash
+Edite os arquivos na pasta data/ com suas informações:
+
+perfil_pessoal.json: Seu nome, hobbies, objetivos
+
+agenda_tarefas.csv: Seus compromissos e tarefas
+
+base_conhecimento.json: Receitas, locais favoritos, lembretes
+```
+
+### 4. Rodar o Fred
 ```bash
 streamlit run src/app.py
 ```
 
 ## 🎯 Exemplo de Uso
 
-**Pergunta:** "O que é CDI?"  
-**Edu:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
+**Pergunta:** "O que tenho hoje?"  
+**Edu:** "Bom dia! 🌞 Hoje você tem reunião com cliente às 14:30 e jantar com Ana às 19h. Ah, e não esqueça: hoje é quarta-feira, dia de colocar o lixo orgânico! Quer que eu te lembre 1h antes de cada compromisso?"
 
-**Pergunta:** "Onde estou gastando mais?"  
-**Edu:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
+**Pergunta:** "Qual restaurante italiano você recomenda?"  
+**Edu:** "Baseado no seu gosto, o Terraço Itália é perfeito para ocasiões especiais! Se quiser algo mais casual, tem a Cantina do Piero que você ainda não foi. Quer que eu veja disponibilidade para hoje?"
+
+**Pergunta:** "Como faz o macarrão parisiense?"  
+**Edu:** "Vamos cozinhar? 🍝 Ingredientes: macarrão, creme de leite, presunto, ervilha e queijo. É só cozinhar o macarrão, misturar os ingredientes e gratinar no forno. Quer que eu adicione na lista de compras?"
 
 ## 📊 Métricas de Avaliação
 
 | Métrica | Objetivo |
 |---------|----------|
-| **Assertividade** | O agente responde o que foi perguntado? |
-| **Segurança** | Evita inventar informações (anti-alucinação)? |
-| **Coerência** | A resposta é adequada ao perfil do cliente? |
+| **Assertividade** | O assistente lembra o compromisso certo? |
+| **Segurança** | 	As sugestões são relevantes para a rotina? |
+| **Coerência** | A resposta respeita o contexto e histórico? |
+| **Privacidade** | Dados pessoais nunca saem da máquina? |
 
 ## 🎬 Diferenciais
 
-- **Personalização:** Usa os dados do próprio cliente nos exemplos
+- **Personalização:** Usa os dados do próprio usuário nos exemplos
 - **100% Local:** Roda com Ollama, sem enviar dados para APIs externas
-- **Educativo:** Foco em ensinar, não em vender produtos
-- **Seguro:** Estratégias de anti-alucinação documentadas
+- **Contexto contínuo:** Lembra de conversas anteriores para interações mais naturais
+- **Privacidade:** Seus dados ficam no seu computador, sempre sob seu controle
 
 ## 📝 Documentação Completa
 
