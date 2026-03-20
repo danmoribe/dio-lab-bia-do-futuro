@@ -41,11 +41,11 @@
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [X] Duração máxima de 3 minutos
+- [X] Problema claramente definido
+- [X] Solução demonstrada na prática
+- [X] Diferencial explicado
+- [X] Áudio e vídeo com boa qualidade
 
 ---
 
@@ -60,10 +60,3 @@
 | **Demo 3** | "Me explica o que é Tesouro Selic" | "Me lembra a receita do macarrão parisiense" |
 | **Diferencial** | Usa SEUS dados financeiros como exemplo | Usa SEUS dados pessoais como referência |
 
----
-
-## Link do Vídeo
-
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
