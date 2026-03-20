@@ -11,7 +11,7 @@ MODELO = "gpt-oss"
 # ============ CARREGAR DADOS ============
 perfil = json.load(open('./data/perfil_pessoal.json'))
 agenda = pd.read_csv('./data/agenda_tarefas.csv')
-historico = pd.read_csv('./data/historico_conversas.csv')
+historico = pd.read_csv('./data/historico_conversas.csv', sep=';')
 base_conhecimento = json.load(open('./data/base_conhecimento.json'))
 
 # ============ MONTAR CONTEXTO ============
